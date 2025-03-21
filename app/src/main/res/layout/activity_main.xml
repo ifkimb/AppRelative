@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:id="@+id/imgSegunda"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/imgPrimeira"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="-50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/torta" />
+
+    <ImageView
+        android:id="@+id/imgTerceira"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/imgPrimeira"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toEndOf="@id/imgPrimeira"
+        android:scaleType="centerCrop"
+        android:src="@drawable/girl" />
+
+    <ImageView
+        android:id="@+id/imgQuarta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/imgPrimeira"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_toRightOf="@id/imgSegunda"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menina" />
+
+    <ImageView
+        android:id="@+id/imgQuinta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/imgPrimeira"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"/>
+
+    <ImageView
+        android:id="@+id/imgPrimeira"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bunny" />
+</RelativeLayout>
